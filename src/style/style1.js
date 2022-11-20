@@ -16,32 +16,3 @@ export const CenteredModal = styled.div`
     align-items: center;
 `
 
-export const Notices = styled.div`
-
-    width: 80%;
-    height: 80%;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 35px;
-
-    div{
-    
-        display: flex;
-        padding-left: 10px;
-        width: 100%;
-        border-bottom: 1px solid #c3c3c3;
-    }
-    
-    h2{
-        font-size: 1rem;
-        font-family: sans-serif;
-        font-style: italic;
-        text-transform: uppercase;
-        color: #0080ca
-
-    }
-
-`

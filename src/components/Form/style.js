@@ -54,11 +54,33 @@ export const StyledForm = styled.form`
             border-color: #e3e3e3
         }
 
-        span{
-            font-size: 0.7rem;
-            color: #b9b9b9;
-        }
     }
 
-    
+    button{
+        width: 20%;
+        height: 2.3rem;
+        background-color: #0080ca;
+        border-radius: 10%;
+        border: none;
+        color: #fff;
+        font-weight: 600;
+        cursor: pointer;
+
+        :hover{
+            box-shadow: 1px 2px 1px 1px rgba(50, 50, 50, 0.3);
+        }
+    }    
+`
+
+export const Alert = styled.span`
+
+    color: #b9b9b9;
+    font-size: 0.7rem;
+
+`
+
+export const MessageError = styled.span`
+    color: #e24000;
+    font-size: 0.7rem;
+
 `
