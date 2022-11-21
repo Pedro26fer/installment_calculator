@@ -43,6 +43,13 @@ export const StyledForm = styled.form`
             padding:12px ;
             width: 60%;
             height: 1rem;
+            ::placeholder{
+                font-size: 0.7rem;
+                font-style: italic;
+                color: #a1a1a1;
+
+                
+            }
 
             :focus{
                 outline-style: solid;

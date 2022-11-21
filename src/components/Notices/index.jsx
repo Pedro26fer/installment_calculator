@@ -12,7 +12,7 @@ export const Notice = ({dayOne, dayTwo, dayThree, dayFour}) => {
                 </h2>
 
                 <ul>
-                    <li>Amanha: <span>R$ {dayOne},00</span></li>
+                    <li>Amanhã: <span>R$ {dayOne},00</span></li>
                     <li>Em 15 dias: <span>R$ {dayTwo},00</span></li>
                     <li>Em 30 dias: <span>R$ {dayThree},00</span></li>
                     <li>Em 90 dias: <span>R$ {dayFour},00</span></li>
