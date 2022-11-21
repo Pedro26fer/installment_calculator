@@ -4,16 +4,18 @@ import {useForm} from 'react-hook-form';
 import {yupResolver} from '@hookform/resolvers/yup';  
 import { Api } from "../../assets";
 
+
 export const Form = ({setDayOne, setDayTwo, setDayThree, setDayFour}) => {
 
+    
     const handleSubmiting = async (data) => {
         const response = await Api.post("https://frontend-challenge-7bu3nxh76a-uc.a.run.app", data)
         const days = response.data
-
+        
         setDayOne(days[1])
         setDayTwo(days[15])
         setDayThree(days[30])
-        setDayFour(days[90])  
+        setDayFour(days[90])
     }
 
     const formSchema = yup.object().shape({
@@ -35,11 +37,12 @@ export const Form = ({setDayOne, setDayTwo, setDayThree, setDayFour}) => {
             </div>
 
             <label>
-                Informe o valor da venda * {errors.amount && ( <MessageError> - Informe um valor</MessageError>)}
+                Informe o valor da venda * {errors.amount && ( <MessageError> - Informe um valor acima de 1000</MessageError>)}
                 <input
                     type="number"
                     id = "amount"
                     {...register("amount")}
+                    placeholder="Valores a partir de 1000"
                   />                  
             </label>
                            
